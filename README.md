@@ -2,10 +2,4 @@
 
 https://pythonhosted.org/sshim/
 
- python -m venv venv
-
- {
-    "python.linting.enabled": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "./venv/bin/black",
-}
+https://docs.netbox.dev/en/stable/installation/
