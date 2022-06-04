@@ -17,3 +17,5 @@ name = headers_auth.json in token folder
     "Authorization": "Token XXXxxxXXXXX",
     "Content-Type": "application/json"
 }
+
+Tests with pytest -v

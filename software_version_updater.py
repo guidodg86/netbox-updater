@@ -14,6 +14,10 @@ devices_data = json.loads(query_device_results.text)
 
 for device in devices_data["results"]:
 
+    if device["tenant"]["name"] != "NOC" or device["status"]["value"] != "active":
+        print(f"Skipping the device {device['name']}...")
+        continue
+
     device_name = device["name"]
     device_id = device["id"]
     sw_level = device["custom_fields"]["sw_version"]
@@ -47,7 +51,6 @@ for device in devices_data["results"]:
     net_connect.disconnect()
 
     url_to_patch = url_devices + str(device_id) + "/"
-    print(url_to_patch)
 
     payload = json.dumps({"custom_fields": {"sw_version": updated_sw_level}})
     patch_response = requests.request(
@@ -55,4 +58,3 @@ for device in devices_data["results"]:
     )
 
     print(patch_response)
-    print(patch_response.text)
