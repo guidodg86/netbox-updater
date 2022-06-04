@@ -1,5 +1,6 @@
 {
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "./venv/bin/black"
+    "python.formatting.blackPath": "./venv/bin/black",
+    "editor.formatOnSave": true
 }
