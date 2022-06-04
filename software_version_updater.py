@@ -7,16 +7,15 @@ with open("./token/headers_auth.json") as headers_file:
     headers = json.loads(headers_file.read())
 
 url_devices = "http://127.0.0.1:8000/api/dcim/devices/"
+filter_devices = "?tenant=noc&status=active"
 
-
-query_device_results = requests.request("GET", url_devices, headers=headers)
+query_device_results = requests.request(
+    "GET", url_devices + filter_devices, headers=headers
+)
 devices_data = json.loads(query_device_results.text)
 
-for device in devices_data["results"]:
 
-    if device["tenant"]["name"] != "NOC" or device["status"]["value"] != "active":
-        print(f"Skipping the device {device['name']}...")
-        continue
+for device in devices_data["results"]:
 
     device_name = device["name"]
     device_id = device["id"]
