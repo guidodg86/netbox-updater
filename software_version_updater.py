@@ -30,8 +30,17 @@ for device in devices_data["results"]:
     query_device_type_data = requests.request("GET", device_type_url, headers=headers)
     device_type_data = json.loads(query_device_type_data.text)
     sw_level_parser = device_type_data["custom_fields"]["sw_version_parser"]
+    command_sw_version = device_type_data["custom_fields"]["command_soft_version"]
 
-    print(device_id, device_name, ipv4, port, sw_level, sw_level_parser)
+    print(
+        device_id,
+        device_name,
+        ipv4,
+        port,
+        sw_level,
+        sw_level_parser,
+        command_sw_version,
+    )
 
     net_connect = ConnectHandler(
         device_type="terminal_server",
@@ -41,7 +50,7 @@ for device in devices_data["results"]:
         port=port,
     )
 
-    command_printout = net_connect.send_command("show version")
+    command_printout = net_connect.send_command(command_sw_version)
 
     parser_callback = getattr(parsers, sw_level_parser)
     updated_sw_level = parser_callback(command_printout)

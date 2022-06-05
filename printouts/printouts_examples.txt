@@ -294,3 +294,35 @@ Encryption hardware device : Cisco ASA Crypto on-board accelerator (revision
 6: Ext: GigabitEthernet1/6 : address is 00f2.8b8e.69f4, irq 255
 7: Ext: GigabitEthernet1/7 : address is 00f2.8b8e.69f5, irq 255
 8: Ext: GigabitEthernet1/8 : address is 00f2.8b8e.69f6, irq 255
+
+
+Aruba WLC
+
+https://www.arubanetworks.com/techdocs/CLI-Bank/Content/aos8/sh-image-ver.htm
+
+(host)[mynode] #show image version
+
+----------------------------------
+
+Partition               : 0:0 (/mnt/disk1)
+
+
+                                                        Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)
+
+Build number            : 0000
+
+Label                   : ssetty@ss_sc_new-ENG.0000
+
+Built on                : Wed Jun 8 14:46:22 IST 2016
+
+----------------------------------
+
+Partition               : 0:1 (/mnt/disk2) **Default boot**
+
+Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)
+
+Build number            : 0000
+
+Label                   : ssetty@ss_sc_new-ENG.0000
+
+Built on                : Thu Jun 16 12:53:57 IST 2016

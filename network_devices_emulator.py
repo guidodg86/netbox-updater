@@ -78,6 +78,24 @@ def cisco_asa(script):
                 )
 
 
+def aruba_wlc(script):
+    with open("./printouts/aruba_wlc.json", "r") as printout_file:
+        device_data = json.loads(printout_file.read())
+        while True:
+            script.write("#")
+            try:
+                script.expect(device_data["command"])
+                for line in device_data["printout"]:
+                    script.writeline(line[:-1])
+            except AssertionError:
+                script.write(
+                    "Error!!!!, this emulated device works only with 'show image version' command\r\n"
+                )
+                script.write(
+                    f"For more information about the command, please check {device_data['metadata'] }\r\n"
+                )
+
+
 network_devices = []
 network_devices.append(
     {"callback_function": catalyst_switch, "port": 3001, "name": "HEAD-LAN001"}
@@ -90,6 +108,9 @@ network_devices.append(
 )
 network_devices.append(
     {"callback_function": cisco_asa, "port": 3004, "name": "HEAD-SEC001"}
+)
+network_devices.append(
+    {"callback_function": aruba_wlc, "port": 3005, "name": "HEAD-WLC001"}
 )
 
 # Create new threads

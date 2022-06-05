@@ -29,3 +29,13 @@ def test_Cisco_ASA_sw_version_parser():
         )
         == "9.8(2)"
     )
+
+
+def test_Aruba_7205_sw_version_parser():
+    assert parsers.Aruba_7205_sw_version_parser("fake string") == "0.0.0"
+    assert (
+        parsers.Aruba_7205_sw_version_parser(
+            "Extra_data\ndummy data\nSoftware Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)"
+        )
+        == "8.0.0.0-svcs-ctrl"
+    )

@@ -1,22 +1,25 @@
-Cisco Adaptive Security Appliance Software Version 9.8(2)
-Firepower Extensible Operating System Version 2.2(2.52)
-Device Manager Version 7.8(1)
-Compiled on Sun 27-Aug-17 13:06 PDT by builders
-System image file is "disk0:/asa982-lfbff-k8.SPA"
-Config file at boot was "startup-config"
-ciscoasa up 10 mins 59 secs
-Hardware: ASA5506, 4096 MB RAM, CPU Atom C2000 series 1250 MHz, 1 CPU (4
-cores)
-Internal ATA Compact Flash, 8000MB
-BIOS Flash M25P64 @ 0xfed01000, 16384KB
-Encryption hardware device : Cisco ASA Crypto on-board accelerator (revision
-0x1)
- Number of accelerators: 1
-1: Ext: GigabitEthernet1/1 : address is 00f2.8b8e.69ef, irq 255
-2: Ext: GigabitEthernet1/2 : address is 00f2.8b8e.69f0, irq 255
-3: Ext: GigabitEthernet1/3 : address is 00f2.8b8e.69f1, irq 255
-4: Ext: GigabitEthernet1/4 : address is 00f2.8b8e.69f2, irq 255
-5: Ext: GigabitEthernet1/5 : address is 00f2.8b8e.69f3, irq 255
-6: Ext: GigabitEthernet1/6 : address is 00f2.8b8e.69f4, irq 255
-7: Ext: GigabitEthernet1/7 : address is 00f2.8b8e.69f5, irq 255
-8: Ext: GigabitEthernet1/8 : address is 00f2.8b8e.69f6, irq 255
+
+----------------------------------
+
+Partition               : 0:0 (/mnt/disk1)
+
+
+                                                        Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)
+
+Build number            : 0000
+
+Label                   : ssetty@ss_sc_new-ENG.0000
+
+Built on                : Wed Jun 8 14:46:22 IST 2016
+
+----------------------------------
+
+Partition               : 0:1 (/mnt/disk2) **Default boot**
+
+Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)
+
+Build number            : 0000
+
+Label                   : ssetty@ss_sc_new-ENG.0000
+
+Built on                : Thu Jun 16 12:53:57 IST 2016

@@ -1,0 +1,31 @@
+{
+    "metadata": "https://www.arubanetworks.com/techdocs/CLI-Bank/Content/aos8/sh-image-ver.htm",
+    "printout": [
+        "\n",
+        "----------------------------------\n",
+        "\n",
+        "Partition               : 0:0 (/mnt/disk1)\n",
+        "\n",
+        "\n",
+        "                                                        Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)\n",
+        "\n",
+        "Build number            : 0000\n",
+        "\n",
+        "Label                   : ssetty@ss_sc_new-ENG.0000\n",
+        "\n",
+        "Built on                : Wed Jun 8 14:46:22 IST 2016\n",
+        "\n",
+        "----------------------------------\n",
+        "\n",
+        "Partition               : 0:1 (/mnt/disk2) **Default boot**\n",
+        "\n",
+        "Software Version        : ArubaOS 8.0.0.0-svcs-ctrl (Digitally Signed - Developer/Internal Build)\n",
+        "\n",
+        "Build number            : 0000\n",
+        "\n",
+        "Label                   : ssetty@ss_sc_new-ENG.0000\n",
+        "\n",
+        "Built on                : Thu Jun 16 12:53:57 IST 2016"
+    ],
+    "command": "show image version"
+}
