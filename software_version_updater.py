@@ -1,5 +1,5 @@
 """
-    Main script for the updating sw_version task
+    Main script for the task of updating sw_version 
 """
 
 # Constant definitions (can be moved to a .info file)

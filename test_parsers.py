@@ -1,3 +1,8 @@
+"""
+    Module that test the parsers funtion
+    It uses pytest
+"""
+
 import parsers
 
 

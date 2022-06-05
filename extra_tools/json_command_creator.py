@@ -2,7 +2,6 @@
     Simple script to generate data on the emulated devices
     The printout must be copied con the file draft_printout, then the rest of the data is asked
     while the script is running
-
 """
 
 

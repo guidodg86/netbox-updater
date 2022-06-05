@@ -1,3 +1,12 @@
+"""
+    Script to parse command printout data from virtual devices
+    One function per type of device
+    If an error occur it returns "0.0.0"
+    The function name is a custom field in device type model in netbox
+    The command is also stored in a custom field in netbox
+"""
+
+
 def Cisco_9k_sw_version_parser(command_printout):
     for line in command_printout.split("\n"):
         splitted_line = line.split(",")

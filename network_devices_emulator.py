@@ -1,3 +1,10 @@
+"""
+    Script to emulate network devices
+    Each virtual device is a port
+    The data of the commands and the printouts is saved in the 
+    'printouts' folders
+"""
+
 import logging
 
 logging.basicConfig(level="DEBUG")
