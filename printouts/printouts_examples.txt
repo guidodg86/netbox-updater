@@ -219,3 +219,49 @@ System Serial Number: FXS2145Q20C
 
 
 Configuration register is 0x2
+
+
+
+NEXUS
+
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/command/reference/fund/n5k-fund-cr/n5k-fund_cmds_show.html
+
+switch# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2002-2010, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+ 
+Software
+BIOS: version 1.3.0
+loader: version N/A
+kickstart: version 5.0(2)N2(1) [build 5.0(2)N2(1)]
+system: version 5.0(2)N2(1) [build 5.0(2)N2(1)]
+power-seq: version v1.2
+BIOS compile time: 09/08/09
+kickstart image file is: bootflash:/sanity-kickstart
+kickstart compile time: 12/6/2010 7:00:00 [12/06/2010 07:35:14]
+system image file is: bootflash:/sanity-system
+system compile time: 12/6/2010 7:00:00 [12/06/2010 08:56:45]
+ 
+Hardware
+cisco Nexus5010 Chassis ("20x10GE/Supervisor")
+Intel(R) Celeron(R) M CPU with 2073416 kB of memory.
+Processor Board ID JAF1228BTAS
+ 
+Device name: BEND-2
+bootflash: 1003520 kB
+ 
+Kernel uptime is 0 day(s), 3 hour(s), 30 minute(s), 45 second(s)
+ 
+Last reset
+Reason: Unknown
+System version:
+Service:
+ 
+plugin
+Core Plugin, Ethernet Plugin, Fc Plugin
