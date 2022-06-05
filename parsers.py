@@ -12,3 +12,10 @@ def Cisco_NEXUS_sw_version_parser(command_printout):
         if line.startswith("system:"):
             return line.split(" ")[2]
     return "0.0.0"
+
+
+def Cisco_ASA_sw_version_parser(command_printout):
+    for line in command_printout.split("\n"):
+        if line.startswith("Cisco Adaptive Security Appliance Software Version"):
+            return line.split(" ")[6]
+    return "0.0.0"

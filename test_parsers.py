@@ -11,11 +11,21 @@ def test_Cisco_9k_sw_version_parser():
     )
 
 
-def test_Cisco_9k_sw_version_parser():
+def test_Cisco_nexus_sw_version_parser():
     assert parsers.Cisco_NEXUS_sw_version_parser("fake string") == "0.0.0"
     assert (
         parsers.Cisco_NEXUS_sw_version_parser(
             "Extra_data\ndummy data\nsystem: version 5.0(2)N2(1) [build 5.0(2)N2(1)]"
         )
         == "5.0(2)N2(1)"
+    )
+
+
+def test_Cisco_ASA_sw_version_parser():
+    assert parsers.Cisco_ASA_sw_version_parser("fake string") == "0.0.0"
+    assert (
+        parsers.Cisco_ASA_sw_version_parser(
+            "Extra_data\ndummy data\nCisco Adaptive Security Appliance Software Version 9.8(2)"
+        )
+        == "9.8(2)"
     )

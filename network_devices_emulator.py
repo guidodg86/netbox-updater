@@ -60,6 +60,24 @@ def nexus(script):
                 )
 
 
+def cisco_asa(script):
+    with open("./printouts/cisco_asa.json", "r") as printout_file:
+        device_data = json.loads(printout_file.read())
+        while True:
+            script.write("#")
+            try:
+                script.expect(device_data["command"])
+                for line in device_data["printout"]:
+                    script.writeline(line[:-1])
+            except AssertionError:
+                script.write(
+                    "Error!!!!, this emulated device works only with 'show version' command\r\n"
+                )
+                script.write(
+                    f"For more information about the command, please check {device_data['metadata'] }\r\n"
+                )
+
+
 network_devices = []
 network_devices.append(
     {"callback_function": catalyst_switch, "port": 3001, "name": "HEAD-LAN001"}
@@ -70,7 +88,9 @@ network_devices.append(
 network_devices.append(
     {"callback_function": nexus, "port": 3003, "name": "HEAD-NEX001"}
 )
-
+network_devices.append(
+    {"callback_function": cisco_asa, "port": 3004, "name": "HEAD-SEC001"}
+)
 
 # Create new threads
 for device in network_devices:

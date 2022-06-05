@@ -1,0 +1,28 @@
+{
+    "metadata": "https://www.ccri.edu/faculty_staff/comp/jmowry/Security/ASA5506%209-3-1-2%20Lab%20-%20Configure%20ASA%20Basic%20Settings%20and%20Firewall%20Using%20CLI.pdf",
+    "printout": [
+        "Cisco Adaptive Security Appliance Software Version 9.8(2)\n",
+        "Firepower Extensible Operating System Version 2.2(2.52)\n",
+        "Device Manager Version 7.8(1)\n",
+        "Compiled on Sun 27-Aug-17 13:06 PDT by builders\n",
+        "System image file is \"disk0:/asa982-lfbff-k8.SPA\"\n",
+        "Config file at boot was \"startup-config\"\n",
+        "ciscoasa up 10 mins 59 secs\n",
+        "Hardware: ASA5506, 4096 MB RAM, CPU Atom C2000 series 1250 MHz, 1 CPU (4\n",
+        "cores)\n",
+        "Internal ATA Compact Flash, 8000MB\n",
+        "BIOS Flash M25P64 @ 0xfed01000, 16384KB\n",
+        "Encryption hardware device : Cisco ASA Crypto on-board accelerator (revision\n",
+        "0x1)\n",
+        " Number of accelerators: 1\n",
+        "1: Ext: GigabitEthernet1/1 : address is 00f2.8b8e.69ef, irq 255\n",
+        "2: Ext: GigabitEthernet1/2 : address is 00f2.8b8e.69f0, irq 255\n",
+        "3: Ext: GigabitEthernet1/3 : address is 00f2.8b8e.69f1, irq 255\n",
+        "4: Ext: GigabitEthernet1/4 : address is 00f2.8b8e.69f2, irq 255\n",
+        "5: Ext: GigabitEthernet1/5 : address is 00f2.8b8e.69f3, irq 255\n",
+        "6: Ext: GigabitEthernet1/6 : address is 00f2.8b8e.69f4, irq 255\n",
+        "7: Ext: GigabitEthernet1/7 : address is 00f2.8b8e.69f5, irq 255\n",
+        "8: Ext: GigabitEthernet1/8 : address is 00f2.8b8e.69f6, irq 255"
+    ],
+    "command": "show version"
+}
