@@ -39,3 +39,11 @@ def test_Aruba_7205_sw_version_parser():
         )
         == "8.0.0.0-svcs-ctrl"
     )
+
+
+def test_PaloAlto_sw_version_parser():
+    assert parsers.PaloAlto_sw_version_parser("fake string") == "0.0.0"
+    assert (
+        parsers.PaloAlto_sw_version_parser("Extra_data\ndummy data\nsw-version: 8.0.4")
+        == "8.0.4"
+    )

@@ -326,3 +326,58 @@ Build number            : 0000
 Label                   : ssetty@ss_sc_new-ENG.0000
 
 Built on                : Thu Jun 16 12:53:57 IST 2016
+
+
+
+
+
+PALO ALTO 
+
+https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClZuCAK
+
+admin@anuragFW> show system info
+
+hostname: anuragFW
+ip-address: 10.21.56.125
+netmask: 255.255.255.0
+default-gateway: 10.21.56.1
+ip-assignment: static
+ipv6-address: unknown
+ipv6-link-local-address: fe80::20c:0000:0000:0000/64
+ipv6-default-gateway:
+mac-address: 00:0c:29:00:00:00
+time: Wed Aug 2 17:45:41 2017
+uptime: 0 days, 14:07:01
+family: vm
+model: PA-VM
+serial: 0070000000001
+vm-mac-base: 00:1B:17:00:00:00
+vm-mac-count: 256
+vm-uuid: 00000000-0000-0000-0000-000000000000
+vm-cpuid: 000000000000000
+vm-license: VM-100
+vm-mode: VMWare ESXi
+sw-version: 8.0.4
+global-protect-client-package-version: 4.0.2
+app-version: 718-4138
+app-release-date: 2017/07/25 14:09:19
+av-version: 2322-2813
+av-release-date: 2017/08/01 04:02:33
+threat-version: 718-4138
+threat-release-date: 2017/07/25 14:09:19
+wf-private-version: 0
+wf-private-release-date: unknown
+url-db: paloaltonetworks
+wildfire-version: 162343-164248
+wildfire-release-date: 2017/08/02 04:27:02
+url-filtering-version: 20170801.40146
+global-protect-datafile-version: 1501612802
+global-protect-datafile-release-date: 2017/08/02 00:10:02
+global-protect-clientless-vpn-version: 64-85
+global-protect-clientless-vpn-release-date: 2017/07/05 09:23:38
+logdb-version: 8.0.16
+platform-family: vm
+vpn-disable-mode: off
+multi-vsys: off
+operational-mode: normal
+ 

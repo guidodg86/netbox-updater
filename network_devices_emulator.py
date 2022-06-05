@@ -96,6 +96,24 @@ def aruba_wlc(script):
                 )
 
 
+def paloalto(script):
+    with open("./printouts/paloalto.json", "r") as printout_file:
+        device_data = json.loads(printout_file.read())
+        while True:
+            script.write("#")
+            try:
+                script.expect(device_data["command"])
+                for line in device_data["printout"]:
+                    script.writeline(line[:-1])
+            except AssertionError:
+                script.write(
+                    "Error!!!!, this emulated device works only with 'show system info' command\r\n"
+                )
+                script.write(
+                    f"For more information about the command, please check {device_data['metadata'] }\r\n"
+                )
+
+
 network_devices = []
 network_devices.append(
     {"callback_function": catalyst_switch, "port": 3001, "name": "HEAD-LAN001"}
@@ -111,6 +129,9 @@ network_devices.append(
 )
 network_devices.append(
     {"callback_function": aruba_wlc, "port": 3005, "name": "HEAD-WLC001"}
+)
+network_devices.append(
+    {"callback_function": paloalto, "port": 3006, "name": "HEAD-SEC002"}
 )
 
 # Create new threads

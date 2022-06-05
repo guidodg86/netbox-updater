@@ -26,3 +26,10 @@ def Aruba_7205_sw_version_parser(command_printout):
         if line.startswith("Software Version"):
             return line.split(": ")[1].split(" ")[1]
     return "0.0.0"
+
+
+def PaloAlto_sw_version_parser(command_printout):
+    for line in command_printout.split("\n"):
+        if line.startswith("sw-version:"):
+            return line.split(" ")[1]
+    return "0.0.0"
