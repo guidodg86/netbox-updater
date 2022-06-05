@@ -1,4 +1,18 @@
-# netbox-updater
+# The netbox software version update challenge
+
+## Objectives
+
+Create a python script to interact with netbox and some network devices
+
+- Collect information for devices with Status = Active, Tenant = NOC in Netbox
+- Information to collect: software version
+- Custom field to update: "sw_version"
+- Assume network device list would contain Cisco Catalyst IOS, Cisco Nexus OS, Cisco ASA OS, Aruba OS, PaloAlto PAN-OS 
+
+## Installation 
+
+1. Set up a python virtual environment and install the following packages listed in requeriments.txt
+2. 
 
 https://pythonhosted.org/sshim/
 
