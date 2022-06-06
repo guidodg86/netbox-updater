@@ -11,7 +11,7 @@ Create a python script to interact with netbox and some network devices
 
 ## Installation 
 
-1. Set up a python virtual environment and install the following packages listed in requeriments.txt
+1. Set up a python virtual environment and install the following packages listed in [requeriments.txt](https://github.com/guidodg86/netbox-updater/blob/main/requeriments.txt)
 2. Spin up a local netbox environment. Steps can be found [here](https://docs.netbox.dev/en/stable/installation/). No need to go beyond steps 4, 5 and 6.
 3. Create a API token in netbox. (Profile -> Api tokens)
 4. Create a folder name token within this repo folder and add a json file named **headers_auth.json** with this content:
@@ -46,3 +46,14 @@ Once the devices emulator and the netbox environment are up, the main script can
    python3 software_version_updater.py  
 ```
 The script will fetch the network devices from netbox and will connect to every virtual device to gather information about the software version. If any update in netbox is needed, it will perform it.
+
+## Execution example
+Here you can see the initial status of the netbox devices, all the devices have been placed in a software version of **1,2n** as a **wrong value**
+![initial status](https://raw.githubusercontent.com/guidodg86/netbox-updater/master/pics/1.png?raw=true)
+After the script execution we can see the following:
+![end_status](https://raw.githubusercontent.com/guidodg86/netbox-updater/master/pics/2.png?raw=true)
+The logs from the devices can be found in the [example_log.txt](https://github.com/guidodg86/netbox-updater/blob/main/example_log.txt) file in this repository.
+As an example here we can see one of the updates made:
+![example](https://raw.githubusercontent.com/guidodg86/netbox-updater/master/pics/3.png?raw=true)
+
+## Custom fields
