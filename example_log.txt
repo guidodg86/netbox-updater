@@ -1,0 +1,70 @@
+2022-06-05 21:43:38 INFO     Starting sw_version update
+2022-06-05 21:43:38 INFO     Opening headers file
+2022-06-05 21:43:38 INFO     Getting devices list from netbox
+2022-06-05 21:43:38 INFO     Starting with HEAD-LAN001
+2022-06-05 21:43:38 INFO     Getting ipv4 data from HEAD-LAN001
+2022-06-05 21:43:38 INFO     Getting device type data from HEAD-LAN001
+2022-06-05 21:43:38 INFO     Device HEAD-LAN001 is on netbox on 1,2n
+2022-06-05 21:43:38 INFO     On device HEAD-LAN001 the command 'show version' and will be parsed with 'Cisco_9k_sw_version_parser'
+2022-06-05 21:43:38 INFO     Connecting to HEAD-LAN001...
+2022-06-05 21:43:38 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:38 INFO     Authentication (password) successful!
+2022-06-05 21:43:39 INFO     Parsing printout of 'show version' in HEAD-LAN001...
+2022-06-05 21:43:39 INFO     In HEAD-LAN001 updating from 1,2n  to 16.10.1 on netbox
+2022-06-05 21:43:39 INFO     Succesfully updated sw_version of HEAD-LAN001 in netbox
+2022-06-05 21:43:39 INFO     Starting with HEAD-LAN002
+2022-06-05 21:43:39 INFO     Getting ipv4 data from HEAD-LAN002
+2022-06-05 21:43:39 INFO     Getting device type data from HEAD-LAN002
+2022-06-05 21:43:39 INFO     Device HEAD-LAN002 is on netbox on 1,2n
+2022-06-05 21:43:39 INFO     On device HEAD-LAN002 the command 'show version' and will be parsed with 'Cisco_9k_sw_version_parser'
+2022-06-05 21:43:39 INFO     Connecting to HEAD-LAN002...
+2022-06-05 21:43:39 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:39 INFO     Authentication (password) successful!
+2022-06-05 21:43:39 INFO     Parsing printout of 'show version' in HEAD-LAN002...
+2022-06-05 21:43:39 INFO     In HEAD-LAN002 updating from 1,2n  to 16.10.1 on netbox
+2022-06-05 21:43:39 INFO     Succesfully updated sw_version of HEAD-LAN002 in netbox
+2022-06-05 21:43:39 INFO     Starting with HEAD-NEX001
+2022-06-05 21:43:39 INFO     Getting ipv4 data from HEAD-NEX001
+2022-06-05 21:43:39 INFO     Getting device type data from HEAD-NEX001
+2022-06-05 21:43:39 INFO     Device HEAD-NEX001 is on netbox on 1,2n
+2022-06-05 21:43:39 INFO     On device HEAD-NEX001 the command 'show version' and will be parsed with 'Cisco_NEXUS_sw_version_parser'
+2022-06-05 21:43:39 INFO     Connecting to HEAD-NEX001...
+2022-06-05 21:43:39 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:39 INFO     Authentication (password) successful!
+2022-06-05 21:43:39 INFO     Parsing printout of 'show version' in HEAD-NEX001...
+2022-06-05 21:43:39 INFO     In HEAD-NEX001 updating from 1,2n  to 5.0(2)N2(1) on netbox
+2022-06-05 21:43:39 INFO     Succesfully updated sw_version of HEAD-NEX001 in netbox
+2022-06-05 21:43:39 INFO     Starting with HEAD-SEC001
+2022-06-05 21:43:39 INFO     Getting ipv4 data from HEAD-SEC001
+2022-06-05 21:43:40 INFO     Getting device type data from HEAD-SEC001
+2022-06-05 21:43:40 INFO     Device HEAD-SEC001 is on netbox on 1,2n
+2022-06-05 21:43:40 INFO     On device HEAD-SEC001 the command 'show version' and will be parsed with 'Cisco_ASA_sw_version_parser'
+2022-06-05 21:43:40 INFO     Connecting to HEAD-SEC001...
+2022-06-05 21:43:40 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:40 INFO     Authentication (password) successful!
+2022-06-05 21:43:40 INFO     Parsing printout of 'show version' in HEAD-SEC001...
+2022-06-05 21:43:40 INFO     In HEAD-SEC001 updating from 1,2n  to 9.8(2) on netbox
+2022-06-05 21:43:40 INFO     Succesfully updated sw_version of HEAD-SEC001 in netbox
+2022-06-05 21:43:40 INFO     Starting with HEAD-SEC002
+2022-06-05 21:43:40 INFO     Getting ipv4 data from HEAD-SEC002
+2022-06-05 21:43:40 INFO     Getting device type data from HEAD-SEC002
+2022-06-05 21:43:40 INFO     Device HEAD-SEC002 is on netbox on 1,2n
+2022-06-05 21:43:40 INFO     On device HEAD-SEC002 the command 'show system info' and will be parsed with 'PaloAlto_sw_version_parser'
+2022-06-05 21:43:40 INFO     Connecting to HEAD-SEC002...
+2022-06-05 21:43:40 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:40 INFO     Authentication (password) successful!
+2022-06-05 21:43:40 INFO     Parsing printout of 'show system info' in HEAD-SEC002...
+2022-06-05 21:43:40 INFO     In HEAD-SEC002 updating from 1,2n  to 8.0.4 on netbox
+2022-06-05 21:43:40 INFO     Succesfully updated sw_version of HEAD-SEC002 in netbox
+2022-06-05 21:43:40 INFO     Starting with HEAD-WLC001
+2022-06-05 21:43:40 INFO     Getting ipv4 data from HEAD-WLC001
+2022-06-05 21:43:40 INFO     Getting device type data from HEAD-WLC001
+2022-06-05 21:43:40 INFO     Device HEAD-WLC001 is on netbox on 1,2n
+2022-06-05 21:43:40 INFO     On device HEAD-WLC001 the command 'show image version' and will be parsed with 'Aruba_7205_sw_version_parser'
+2022-06-05 21:43:40 INFO     Connecting to HEAD-WLC001...
+2022-06-05 21:43:40 INFO     Connected (version 2.0, client paramiko_2.11.0)
+2022-06-05 21:43:40 INFO     Authentication (password) successful!
+2022-06-05 21:43:40 INFO     Parsing printout of 'show image version' in HEAD-WLC001...
+2022-06-05 21:43:40 INFO     In HEAD-WLC001 updating from 1,2n  to 8.0.0.0-svcs-ctrl on netbox
+2022-06-05 21:43:41 INFO     Succesfully updated sw_version of HEAD-WLC001 in netbox
+2022-06-05 21:43:41 INFO     Task ended, updated 6 devices
