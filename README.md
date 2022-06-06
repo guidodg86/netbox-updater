@@ -37,3 +37,12 @@ Create a python script to interact with netbox and some network devices
    cd ~/netbox-updater/
    python3 network_devices_emulator.py  
    ```
+## Main script execution
+
+Once the devices emulator and the netbox environment are up, the main script can be executed. This script will interact with netbox and also with the emulated devices.
+```bash
+   source ~/netbox-updater/venv/activate
+   cd ~/netbox-updater/
+   python3 software_version_updater.py  
+```
+The script will fetch the network devices from netbox and will connect to every virtual device to gather information about the software version. If any update in netbox is needed, it will perform it.
