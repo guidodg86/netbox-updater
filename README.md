@@ -61,7 +61,7 @@ The following custom fields have been created:
 | Custom field | Model | Description
 | ------------- | ------------- |----------------|
 | sw_version | dcim \| device | Mandatory in challenge to store software version of the device |
-| port | IPAM \| IP address | To saved the port of the virtual device |
+| port | IPAM \| IP address | To save the port of the virtual device |
 | sw_version_parser | dcim \| device type | Name of the function in the python file to parse the printout |
 | 	command_soft_version | dcim \| device type | Command to be executed to get the current software version |
 
