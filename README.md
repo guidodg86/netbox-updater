@@ -57,3 +57,17 @@ As an example here we can see one of the updates made:
 ![example](https://raw.githubusercontent.com/guidodg86/netbox-updater/master/pics/3.png?raw=true)
 
 ## Custom fields
+The following custom fields have been created:
+| Custom field | Model | Description
+| ------------- | ------------- |----------------|
+| sw_version | dcim \| device | Mandatory in challenge to store software version of the device |
+| port | IPAM \| IP address | To saved the port of the virtual device |
+| sw_version_parser | dcim \| device type | Name of the function in the python file to parse the printout |
+| 	command_soft_version | dcim \| device type | Command to be executed to get the current software version |
+
+## Testing
+One test for each parser function has been developed. The test are performed with [pytest](https://docs.pytest.org/en/7.1.x/). In order to test the parser function the following commands need to be executed:
+```bash
+   cd ~/netbox-updater/
+   pytest -v 
+```
